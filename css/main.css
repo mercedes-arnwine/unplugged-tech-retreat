@@ -97,6 +97,54 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*GENERAL STYLES */
+
+   html{
+
+    font-size: 16px;
+    /*DEFAULT FONT FOR THE SITE*/
+   }
+   
+   
+   body{
+
+    font-size: 1em; /*TRANSLATED TO EMS*/
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+   }
+
+   ul,
+   ol{
+    list-style-type: none;
+   }/* why is this important?*/
+
+
+   a{
+    color: #e2e3ed;
+    text-decoration: none;
+   }
+
+   h2{
+    font-family:'Poppins', sans-serif;
+    font-size: 1.875em;/*TRANSLATED TO EMS*/
+   }
+
+
+   h3,
+   h4 {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px  0;
+    font-size: 1.125em ;/*TRANSLATED TO EMS*/
+   }
+
+   p{
+    font-size: .875em;/*TRANSLATED TO EMS*/
+    line-height: 1.285;/*TRANSLATED TO EMS*/
+   }
+
+   address {
+    font-style: normal;
+   }
    .content-wrapper {
     width: 90%;
     margin: 50px 0;
