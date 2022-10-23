@@ -110,6 +110,7 @@ textarea {
 
     font-size: 1em; /*TRANSLATED TO EMS*/
     font-family: 'Open Sans', sans-serif;
+    color: #e2e3ed;
     text-align: left;
    }
 
@@ -126,6 +127,7 @@ textarea {
 
    h2{
     font-family:'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 1.875em;/*TRANSLATED TO EMS*/
    }
 
@@ -133,18 +135,28 @@ textarea {
    h3,
    h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     margin: 20px  0;
     font-size: 1.125em ;/*TRANSLATED TO EMS*/
    }
 
-   p{
+   p  {
     font-size: .875em;/*TRANSLATED TO EMS*/
     line-height: 1.285;/*TRANSLATED TO EMS*/
    }
 
+
+  img {
+    width: 100%;
+  }
+
+  figure  {
+    margin: 0;
+  }
    address {
     font-style: normal;
    }
+
    .content-wrapper {
     width: 90%;
     margin: 50px 0;
@@ -153,6 +165,7 @@ textarea {
 
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,8 +185,18 @@ header .content-wrapper {
   margin: 0; /*-based off mock-*/
 }
 
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /*--based off mock--*/
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -187,6 +210,9 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%; /*--based off mock--*/
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -196,8 +222,13 @@ header nav ul {
 }
 
 
+header nav ul li  {
+  font-size: 1.125em;
+}
+
 /*--Real Footer--*/
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -256,6 +287,7 @@ footer .copyright {
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,7 +421,7 @@ input[type=button] {
 
 /* ==========================================================================
    FAQ Page
-   ========================================================================== */
+========================================================================== */
 
 .faq {
   background-color: #527158;
@@ -508,7 +540,7 @@ input[type=button] {
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
+========================================================================== */
 
    @media only screen and (min-width:768px) {
     /*TABLET STYLES*/
@@ -592,7 +624,7 @@ input[type=button] {
     }
     
     .features .features-item-description {
-      width: 50%;
+      width: 62%;
     }
   
     /* Reviews */
@@ -645,9 +677,9 @@ input[type=button] {
     }
 /* ==========================================================================
      About Page
-     ========================================================================== */
+========================================================================== */
   
-     .mission-content {
+    .mission-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -674,9 +706,9 @@ input[type=button] {
     }
 
 
-   /* ==========================================================================
+/* ==========================================================================
      FAQ Page
-     ========================================================================== */
+========================================================================== */
   
      .faq .content-wrapper {
       justify-content: space-between;
@@ -700,108 +732,108 @@ input[type=button] {
  }
  /*===========================================================================
 
-      DESKTOP STYLES
+DESKTOP STYLES
 ===========================================================================*/
-      @media only screen and (min-width:1200px) {
-        /*Desktop styles here*/
+@media only screen and (min-width:1200px) {
+  /*Desktop styles here*/
       
-        header  {
-          padding: 15px 0;
-        }
-        .content-wrapper {
-          max-width: 960px;
-        }
+  header  {
+     padding: 15px 0;
+  }
+
+
+  .content-wrapper {
+    max-width: 960px;
+  }
       
-        h2 {
-          font-size: 2.25em;
-        }
+  h2 {
+    font-size: 2.25em;
+  }
       
-        h3,
-        h4 {
-            font-size: 1.875em;
-        }
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
       
-        p {
-            font-size: 1.125em;
-            line-height: 1.333;
-        }
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
        
 
-        /* Hero */
-        .hero-area h1 {
-          font-size: 3.75em;
-          width: 60%;
-      }
+/* Hero */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 60%;
+  }
       
-        /* Aside */
-        aside .content-wrapper {
-          justify-content: space-around;
-        }
+/* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
       
-        aside .content-wrapper .form-description,
-        aside .content-wrapper .form {
-          width: 30%;
-        }
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
       
-        .form-description p {
-          font-size: 1.125em;
-        }
+  .form-description p {
+    font-size: 1.125em;
+  }
         
-        /* Features */
+/* Features */
       
-        .features h2 {
-          width: 90%;
-        }
+  .features h2 {
+    width: 90%;
+  }
       
-        .features article {
-          flex-basis: 33%;
-        }
+  .features article {
+    flex-basis: 33%;
+  }
         
-        /* Reviews */
+ /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
 
-        .reviews h2 {
-          padding-bottom: 50px;
-        }
-
-        .reviews article div {
-          width: 42%;
-        }
+  .reviews h2 {
+     padding-bottom: 50px;
+  }
       
-        footer h4 {
-
-          font-size: 1.875em;
-        }
-        /* ==========================================================================
-        About Page
-        ========================================================================== */
+  footer h4 {
+    font-size: 1.875em;
+  }
+/* ==========================================================================
+About Page
+========================================================================== */
       
-        .mission h2,
-        .contact-section .content-wrapper h2 {
-            width: 95%;
-            font-size: 3em;
-        }
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+    font-size: 3em;
+  }
 
-        .contact-content h4 {
-          font-size: 1.87em;
-        }
+  .contact-content h4 {
+    font-size: 1.87em;
+  }
       
-        /* ==========================================================================
-        FAQ Page
-        ========================================================================== */
+/* ==========================================================================
+FAQ Page
+========================================================================== */
        
        
-        .faq h2 {
-          width: 100%;
-          font-size: 3em;
-        }
+.faq h2 {
+  width: 100%;
+  font-size: 3em;
+ }
 
-        .faq h4,
-        .faq p  {
-            font-size: 1.125em;
-            line-height: 1;
-        };
+.faq h4,
+.faq p  {
+  font-size: 1.125em;
+  line-height: 1;
+  };
       
-      }
+}
     
 
 @media print,
